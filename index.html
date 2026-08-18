@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pediatric ENT Brooklyn | Child Sleep Apnea, Ear, Nose &amp; Throat Specialists</title>
+<meta name="description" content="Pediatric ENT Brooklyn treats child sleep apnea, snoring, tonsil &amp; adenoid issues, ear infections, hearing loss, and nasal congestion in children. Call 646-777-6420.">
+<link rel="icon" href="https://s.floomby.com/uploads/s/140826/hcvmFk3F.jpg?download=1&name=Screenshot-14-08-2026%2013:50:36.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF7F1;
+    --bg-alt:#F2EDE2;
+    --ink:#1F2E2E;
+    --ink-soft:#4B5D5C;
+    --teal-deep:#173F3E;
+    --teal-mid:#3E7C79;
+    --teal-line:#BFD8D4;
+    --coral:#E97A55;
+    --coral-deep:#CE5F3C;
+    --mint:#DCEEE8;
+    --line:#DDD3BE;
+    --radius:18px;
+    --shadow: 0 18px 40px -22px rgba(23,63,62,0.35);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Public Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    color:var(--teal-deep);
+    line-height:1.12;
+    margin:0;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{
+    max-width:1140px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  .eyebrow{
+    font-family:'Public Sans',sans-serif;
+    font-weight:700;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--coral-deep);
+  }
+
+  :focus-visible{
+    outline:3px solid var(--coral);
+    outline-offset:3px;
+  }
+
+  /* ---------- Breath wave signature ---------- */
+  .breathwave{
+    width:100%;
+    height:64px;
+    display:block;
+  }
+  .breathwave path{
+    stroke:var(--teal-mid);
+    stroke-width:2.4;
+    fill:none;
+    stroke-linecap:round;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .breathwave path{
+      animation: breathe 5.5s ease-in-out infinite;
+      transform-origin:center;
+    }
+    @keyframes breathe{
+      0%,100%{ transform:scaleY(1); opacity:.75;}
+      50%{ transform:scaleY(1.45); opacity:1;}
+    }
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(251,247,241,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+  }
+  .brand img{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--mint);
+  }
+  .brand-name{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:18px;
+    color:var(--teal-deep);
+    letter-spacing:.01em;
+  }
+  .brand-name span{
+    display:block;
+    font-family:'Public Sans',sans-serif;
+    font-weight:600;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--coral-deep);
+    margin-top:1px;
+  }
+  nav ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+    margin:0;
+    padding:0;
+    font-size:14.5px;
+    font-weight:600;
+  }
+  nav ul a{
+    text-decoration:none;
+    color:var(--ink-soft);
+    transition:color .2s;
+  }
+  nav ul a:hover{color:var(--coral-deep);}
+  .nav-cta{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .phone-link{
+    display:none;
+    font-weight:700;
+    font-size:15px;
+    text-decoration:none;
+    color:var(--teal-deep);
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--coral);
+    color:#fff;
+    font-weight:700;
+    font-size:14.5px;
+    padding:12px 22px;
+    border-radius:999px;
+    text-decoration:none;
+    box-shadow:0 10px 24px -10px rgba(206,95,60,0.55);
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    border:none;
+    cursor:pointer;
+  }
+  .btn:hover{
+    background:var(--coral-deep);
+    transform:translateY(-2px);
+    box-shadow:0 14px 28px -10px rgba(206,95,60,0.6);
+  }
+  .btn-outline{
+    background:transparent;
+    color:var(--teal-deep);
+    border:1.5px solid var(--teal-mid);
+    box-shadow:none;
+  }
+  .btn-outline:hover{
+    background:var(--teal-deep);
+    color:#fff;
+    border-color:var(--teal-deep);
+  }
+
+  .menu-toggle{display:none;background:none;border:none;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:64px 0 0;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:56px;
+    align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(34px,4.4vw,52px);
+    margin:14px 0 22px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--coral-deep);
+  }
+  .hero p.lede{
+    font-size:18px;
+    color:var(--ink-soft);
+    max-width:520px;
+    margin-bottom:30px;
+  }
+  .hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-bottom:28px;
+  }
+  .trust-row{
+    display:flex;
+    gap:26px;
+    flex-wrap:wrap;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+  }
+  .trust-row div{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .trust-dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--teal-mid);
+    flex:none;
+  }
+  .hero-visual{
+    position:relative;
+  }
+  .hero-visual .frame{
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:6px solid #fff;
+  }
+  .hero-visual .frame img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+  }
+  .hero-badge{
+    position:absolute;
+    bottom:-22px;
+    left:-22px;
+    background:#fff;
+    border-radius:16px;
+    padding:16px 20px;
+    box-shadow:var(--shadow);
+    max-width:230px;
+  }
+  .hero-badge .eyebrow{font-size:11px;}
+  .hero-badge p{
+    margin:6px 0 0;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+
+  section{padding:88px 0;}
+  .section-head{
+    max-width:640px;
+    margin:0 auto 52px;
+    text-align:center;
+  }
+  .section-head h2{
+    font-size:clamp(28px,3.4vw,38px);
+    margin-top:10px;
+  }
+  .section-head p{
+    color:var(--ink-soft);
+    margin-top:14px;
+    font-size:16.5px;
+  }
+
+  /* ---------- Services ---------- */
+  .services{background:var(--bg-alt);}
+  .service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+  }
+  .service-card{
+    background:#fff;
+    border-radius:var(--radius);
+    padding:28px 26px;
+    border:1px solid var(--line);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .service-card:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
+  }
+  .service-card.featured{
+    background:var(--teal-deep);
+    border-color:var(--teal-deep);
+    color:#fff;
+    grid-column:span 3;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:22px;
+    align-items:center;
+    padding:32px 34px;
+  }
+  .service-card.featured h3,
+  .service-card.featured .eyebrow{color:#fff;}
+  .service-card.featured .eyebrow{color:#F4B79C;}
+  .service-card.featured p{color:#CFE4E1;}
+  .service-icon{
+    width:44px;height:44px;
+    border-radius:12px;
+    background:var(--mint);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;
+    margin-bottom:16px;
+  }
+  .featured .service-icon{
+    width:64px;height:64px;
+    background:rgba(255,255,255,0.12);
+    margin-bottom:0;
+    font-size:28px;
+  }
+  .service-card h3{
+    font-size:19px;
+    margin-bottom:8px;
+  }
+  .service-card p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+
+  /* ---------- Why choose ---------- */
+  .why-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:56px;
+    align-items:center;
+  }
+  .why-list{
+    list-style:none;
+    margin:0;padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+  }
+  .why-list li{
+    display:flex;
+    gap:16px;
+  }
+  .why-num{
+    font-family:'Fraunces',serif;
+    font-size:20px;
+    color:var(--coral-deep);
+    font-weight:600;
+    flex:none;
+    width:36px;
+  }
+  .why-list h3{
+    font-size:17px;
+    margin-bottom:4px;
+  }
+  .why-list p{
+    margin:0;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  .why-visual{
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .why-visual img{
+    width:100%;
+    height:460px;
+    object-fit:cover;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--bg-alt);}
+  .faq-list{
+    max-width:800px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .faq-item{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding:20px 24px;
+    font-weight:700;
+    font-family:'Fraunces',serif;
+    font-size:17px;
+    color:var(--teal-deep);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";
+    font-family:'Public Sans',sans-serif;
+    font-size:22px;
+    color:var(--coral);
+    flex:none;
+    transition:transform .2s ease;
+  }
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .faq-body{
+    padding:0 24px 22px;
+    color:var(--ink-soft);
+    font-size:15px;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px;
+    align-items:stretch;
+  }
+  .contact-card{
+    background:var(--teal-deep);
+    color:#fff;
+    border-radius:24px;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+  }
+  .contact-card h2{color:#fff;font-size:28px;}
+  .contact-row{
+    display:flex;
+    gap:14px;
+  }
+  .contact-icon{
+    width:38px;height:38px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.1);
+    display:flex;align-items:center;justify-content:center;
+    flex:none;
+    font-size:17px;
+  }
+  .contact-row h4{
+    margin:0 0 4px;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:#F4B79C;
+  }
+  .contact-row p, .contact-row a{
+    margin:0;
+    font-size:15.5px;
+    color:#E4EFEC;
+    text-decoration:none;
+  }
+  .contact-row a:hover{text-decoration:underline;}
+  .map-wrap{
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .map-wrap iframe{
+    width:100%;
+    height:100%;
+    min-height:420px;
+    border:0;
+    display:block;
+  }
+
+  /* ---------- CTA band ---------- */
+  .cta-band{
+    background:var(--coral);
+    color:#fff;
+    text-align:center;
+  }
+  .cta-band h2{color:#fff;font-size:clamp(26px,3.4vw,34px);}
+  .cta-band p{
+    color:#FCE7DE;
+    max-width:560px;
+    margin:14px auto 30px;
+    font-size:16px;
+  }
+  .cta-band .btn{
+    background:#fff;
+    color:var(--coral-deep);
+    box-shadow:0 12px 26px -10px rgba(0,0,0,0.25);
+  }
+  .cta-band .btn:hover{background:var(--teal-deep);color:#fff;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--teal-deep);
+    color:#BBD3D0;
+    padding:44px 0 28px;
+    font-size:13.5px;
+  }
+  .footer-grid{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:24px;
+    padding-bottom:24px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
+    margin-bottom:20px;
+  }
+  .footer-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .footer-brand img{
+    width:38px;height:38px;border-radius:50%;object-fit:cover;
+  }
+  .footer-brand span{
+    font-family:'Fraunces',serif;
+    color:#fff;
+    font-size:16px;
+  }
+  .footer-links{
+    display:flex;
+    gap:22px;
+    list-style:none;
+    padding:0;margin:0;
+  }
+  .footer-links a{text-decoration:none;color:#BBD3D0;}
+  .footer-links a:hover{color:#fff;}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (min-width:760px){
+    .phone-link{display:inline-flex;}
+  }
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-visual{order:-1;}
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+    .service-card.featured{grid-column:span 2;grid-template-columns:1fr;text-align:left;}
+    .why-grid{grid-template-columns:1fr;}
+    .why-visual img{height:320px;}
+    .contact-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    nav ul{display:none;}
+    .service-grid{grid-template-columns:1fr;}
+    .service-card.featured{grid-column:span 1;}
+    section{padding:64px 0;}
+    .hero{padding-top:40px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <img src="https://s.floomby.com/uploads/s/140826/hcvmFk3F.jpg?download=1&name=Screenshot-14-08-2026%2013:50:36.jpg" alt="Pediatric ENT Brooklyn logo">
+      <span class="brand-name">Pediatric ENT Brooklyn<span>Ear · Nose · Throat, for kids</span></span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone-link" href="tel:6467776420">646-777-6420</a>
+      <a class="btn" href="tel:6467776420">Book a Visit</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Pediatric Ear, Nose &amp; Throat Care · Brooklyn, NY</p>
+        <h1>When your child can't breathe easy at night, <em>we're the ones who find out why.</em></h1>
+        <p class="lede">Pediatric ENT Brooklyn specializes in diagnosing and treating <strong>child sleep apnea</strong>, chronic snoring, tonsil &amp; adenoid problems, ear infections, and hearing loss — with a gentle, kid-first approach parents trust.</p>
+        <div class="hero-actions">
+          <a class="btn" href="tel:6467776420">Call 646-777-6420</a>
+          <a class="btn btn-outline" href="#services">Explore Our Services</a>
+        </div>
+        <div class="trust-row">
+          <div><span class="trust-dot"></span>Board-focused pediatric ENT care</div>
+          <div><span class="trust-dot"></span>Sleep apnea &amp; snoring evaluations</div>
+          <div><span class="trust-dot"></span>202 Quentin Rd, Suite 2A, Brooklyn</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="frame">
+          <img src="https://img.magnific.com/premium-photo/glowing-lungs-woman-healthy-lifestyle-concept-close-up-portrait_994764-158809.jpg?w=1060" alt="Healthy breathing and airway care illustration for pediatric ENT">
+        </div>
+        <div class="hero-badge">
+          <p class="eyebrow">Common concern</p>
+          <p>1 in 10 children snore regularly — some are showing early signs of sleep apnea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="breathwave" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,32 L120,32 L145,10 L170,54 L195,32 L340,32 L365,10 L390,54 L415,32 L560,32 L585,10 L610,54 L635,32 L780,32 L805,10 L830,54 L855,32 L1000,32 L1025,10 L1050,54 L1075,32 L1200,32"/>
+  </svg>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our Services</p>
+        <h2>Comprehensive pediatric ENT care, in one calm Brooklyn office</h2>
+        <p>From a first checkup to a full sleep apnea workup, our team specializes exclusively in the ears, nose, and throat conditions that affect children — nothing generalized, nothing rushed.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card featured">
+          <div class="service-icon">☾</div>
+          <div>
+            <p class="eyebrow">Our most requested evaluation</p>
+            <h3>Child Sleep Apnea &amp; Snoring Therapy</h3>
+            <p>Loud snoring, restless sleep, and daytime crankiness can be more than a phase — they're often the first signs of pediatric sleep apnea. We evaluate airway obstruction, enlarged tonsils and adenoids, and breathing patterns during sleep, then build a treatment plan that restores restful nights for your whole family.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">◐</div>
+          <h3>Tonsil &amp; Adenoid Evaluation</h3>
+          <p>Complete tonsil and adenoid assessments for recurring infections, obstructed breathing, and sleep-disrupted airways — with surgical and non-surgical paths explained clearly.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Child Ear Infection Therapy</h3>
+          <p>Fast, thorough diagnosis and treatment for recurring ear infections, including guidance on ear tubes when repeated infections affect hearing or comfort.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">♫</div>
+          <h3>Pediatric Hearing Loss Evaluation</h3>
+          <p>Hearing screenings and therapy for children showing signs of hearing loss, delayed response to sound, or trouble following conversation and instructions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">❀</div>
+          <h3>Children's Nasal Congestion &amp; Sinus Care</h3>
+          <p>Relief for chronic stuffiness, sinus pressure, and nasal blockage that disrupts sleep, feeding, or your child's day-to-day comfort.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✎</div>
+          <h3>Speech Delay ENT Evaluation</h3>
+          <p>When hearing or airway issues may be contributing to speech delay, we assess the underlying ENT causes alongside your child's care team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section id="why">
+    <div class="container why-grid">
+      <div class="why-visual">
+        <img src="https://img.magnific.com/premium-photo/young-handsome-man-blowing-his-nose_488220-26211.jpg" alt="Pediatric ENT patient care at Pediatric ENT Brooklyn">
+      </div>
+      <div>
+        <p class="eyebrow">Why Choose Pediatric ENT Brooklyn?</p>
+        <h2 style="margin:10px 0 30px;font-size:clamp(26px,3.2vw,34px);">Care built entirely around kids — and the parents who worry about them</h2>
+        <ul class="why-list">
+          <li>
+            <span class="why-num">01</span>
+            <div>
+              <h3>Sleep apnea expertise, not a side interest</h3>
+              <p>Pediatric sleep-disordered breathing is one of our core focuses — from first symptom to a clear, actionable treatment plan.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-num">02</span>
+            <div>
+              <h3>A practice that only treats children</h3>
+              <p>Every exam room, every explanation, and every follow-up is designed for a pediatric patient — and the parent sitting beside them.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-num">03</span>
+            <div>
+              <h3>Conveniently located in Brooklyn</h3>
+              <p>Easy-to-reach office at 202 Quentin Rd, Suite 2A — serving families across Brooklyn and the greater NY area.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-num">04</span>
+            <div>
+              <h3>Clear answers, no medical jargon</h3>
+              <p>We walk you through what we're seeing, what it means, and what comes next — so you leave with a plan, not more questions.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Worried about your child's snoring or sleep?</h2>
+      <p>A short evaluation can tell you whether it's simple congestion or something that needs treatment — like pediatric sleep apnea. Call us and we'll help you figure out the next step.</p>
+      <a class="btn" href="tel:6467776420">Call 646-777-6420</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Frequently Asked Questions</p>
+        <h2>Parent questions we hear every week</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>What are the signs of child sleep apnea?</summary>
+          <div class="faq-body">Loud, frequent snoring, pauses in breathing during sleep, restless tossing and turning, mouth breathing, night sweats, and unusually tired or irritable behavior during the day are all common signs of child sleep apnea. If your child shows several of these, an ENT evaluation can determine what's causing it.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How is pediatric sleep apnea diagnosed and treated?</summary>
+          <div class="faq-body">We start with a full airway exam and a review of your child's sleep symptoms, and may recommend a sleep study to confirm the diagnosis. Treatment depends on the cause — often enlarged tonsils and adenoids — and can range from monitoring and allergy management to a tonsillectomy or adenoidectomy in more significant cases.</div>
+        </details>
+        <details class="faq-item">
+          <summary>When should my child see an ENT for snoring?</summary>
+          <div class="faq-body">Occasional light snoring during a cold is usually nothing to worry about. But snoring that happens most nights, is loud, or comes with pauses in breathing is worth having evaluated — it's one of the clearest early indicators of pediatric sleep apnea.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do enlarged tonsils and adenoids cause sleep apnea in kids?</summary>
+          <div class="faq-body">Yes — enlarged tonsils and adenoids are the most common cause of obstructive sleep apnea in children, since they can physically narrow the airway during sleep. We evaluate their size and impact on breathing as part of every sleep apnea workup.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I schedule an appointment, and do you accept insurance?</summary>
+          <div class="faq-body">Call our Brooklyn office at 646-777-6420 and our team will help you find a convenient appointment time and walk you through insurance and payment options ahead of your visit.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Contact Information</p>
+        <h2>Come see us in Brooklyn</h2>
+        <p>Reach out by phone or stop by our office — we're happy to answer questions about child sleep apnea, tonsils, ears, or anything else on your mind.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>Pediatric ENT Brooklyn</h2>
+          <div class="contact-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>202 Quentin Rd, Suite 2A<br>Brooklyn, NY 11223</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:6467776420">646-777-6420</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <a href="https://www.newyorkentinstitute.com" target="_blank" rel="noopener">www.newyorkentinstitute.com</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Monday to Friday 09:00AM-05:00PM - Saturday and Sunday Closed</p>
+            </div>
+          </div>
+          <a class="btn" style="align-self:flex-start;margin-top:8px;" href="tel:6467776420">Call to Book Now</a>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.0943106266986!2d-73.9787815!3d40.6057428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7ef2b3f054899%3A0xdcec5d682e1b8f21!2sPediatric%20ENT%20Brooklyn!5e0!3m2!1sen!2s!4v1787028794993!5m2!1sen!2s" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Pediatric ENT Brooklyn location map"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://s.floomby.com/uploads/s/140826/hcvmFk3F.jpg?download=1&name=Screenshot-14-08-2026%2013:50:36.jpg" alt="Pediatric ENT Brooklyn logo">
+        <span>Pediatric ENT Brooklyn</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pediatric ENT Brooklyn. All rights reserved.</span>
+      <span>202 Quentin Rd, Suite 2A, Brooklyn, NY 11223 · 646-777-6420</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
